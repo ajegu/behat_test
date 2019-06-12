@@ -1,0 +1,15 @@
+default:
+  autoload: 
+    '': 'features/bootstrap'
+  suites:
+    default:
+      contexts:
+        - FeatureContext
+      paths:
+        - 'features'
+  extensions:
+    Behat\MinkExtension:
+      sessions:
+        default:
+          selenium2: 
+            browser: 'chrome'
